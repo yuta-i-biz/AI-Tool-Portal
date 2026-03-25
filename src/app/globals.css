@@ -36,13 +36,19 @@ body {
 
 /* 日本語の自然な改行を助ける */
 h1, h2, h3, h4 {
-  word-break: keep-all;
-  overflow-wrap: anywhere;
+  word-break: normal;
+  overflow-wrap: break-word;
   line-height: 1.2;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
 }
 
 .keep-phrase {
   display: inline-block;
+  max-width: 100%;
 }
 
 /* --- プレミアム背景システム (Deep Space) --- */

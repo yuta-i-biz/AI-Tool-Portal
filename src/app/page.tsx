@@ -22,14 +22,14 @@ export default function Home() {
           <span className="text-accent text-[10px] font-black tracking-[0.3em] uppercase">Marunage AI Ecosystem 2026</span>
         </div>
 
-        <h1 className="text-5xl md:text-7xl lg:text-9xl font-black mb-12 tracking-tighter leading-[1.1] md:leading-[1] animate-slide-up">
+        <h1 className="text-5xl md:text-7xl lg:text-9xl font-black mb-12 tracking-tighter leading-[1.1] md:leading-[1] animate-slide-up md:whitespace-nowrap">
           <span className="keep-phrase">AIで、</span>
           <span className="keep-phrase premium-gradient">稼ぐ。</span>
         </h1>
 
         <p className="text-lg md:text-2xl text-gray-400 max-w-3xl mx-auto mb-16 leading-relaxed font-medium animate-fade-in-delayed px-4">
-          「どれを使えばいいか分からない」を、利益に直結する答えに変える。<br className="hidden md:block" />
-          プロが厳選した、実務で10倍のROIを叩き出す最強AIツール群。
+          「どれを使えばいいか<wbr />分からない」を、<wbr />利益に直結する答えに変える。<br className="hidden md:block" />
+          プロが厳選した、<wbr />実務で10倍のROIを叩き出す<wbr />最強AIツール群。
         </p>
 
         <div className="flex flex-col sm:flex-row gap-8 justify-center items-center animate-fade-in-delayed">
