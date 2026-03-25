@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-accent: #22c55e;
+  --color-accent-blue: #3b82f6;
+  --color-premium-dark: #020617;
+}
+
+:root {
+  --background: #020617;
+  --foreground: #f8fafc;
+  --accent: #22c55e;
+  --accent-glow: rgba(34, 197, 94, 0.2);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  selection-background-color: var(--accent);
+  selection-color: #000;
+}
+
+/* --- プレミアム背景システム (Deep Space) --- */
+.bg-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(circle at 50% 50%, #0f172a 0%, #020617 100%);
+  overflow: hidden;
+}
+
+.bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  mask-image: radial-gradient(circle at 50% 50%, black, transparent 80%);
+  opacity: 0.5;
+}
+
+.bg-blob {
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle at 50% 50%, rgba(34, 197, 94, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  filter: blur(100px);
+  animation: float-slow 30s infinite alternate;
+}
+
+.bg-blob-1 { top: -200px; left: -200px; }
+.bg-blob-2 { bottom: -200px; right: -200px; background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.08) 0%, transparent 70%); animation-delay: -10s; }
+
+@keyframes float-slow {
+  0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+  50% { transform: translate(50px, 100px) scale(1.1) rotate(10deg); }
+  100% { transform: translate(-50px, -50px) scale(0.9) rotate(-10deg); }
+}
+
+/* --- タイポグラフィ --- */
+.premium-gradient {
+  background: linear-gradient(135deg, #22c55e 0%, #10b981 50%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: gradient-flow 8s linear infinite;
+}
+
+@keyframes gradient-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* --- コンポーネントスタイル --- */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 2rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 1.5rem;
+}
+
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(34, 197, 94, 0.4);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(34, 197, 94, 0.15);
+}
+
+.btn-premium {
+  background: linear-gradient(135deg, #22c55e 0%, #10b981 100%);
+  color: #020617;
+  font-weight: 800;
+  padding: 1rem 2.5rem;
+  border-radius: 9999px;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 10px 30px rgba(34, 197, 94, 0.4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-premium:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(34, 197, 94, 0.6);
+}
+
+/* 比較テーブル用装飾 */
+.compare-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.compare-header {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.compare-row {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background 0.3s;
+}
+
+.compare-row:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.compare-cell {
+  padding: 1.25rem;
+  text-align: center;
+}

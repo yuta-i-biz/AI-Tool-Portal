@@ -1,0 +1,102 @@
+[
+  {
+    "id": "cursor",
+    "name": "Cursor",
+    "category": "AI Code Editor",
+    "description": "AIと融合した最強のエディタ。エンジニアだけでなく、非エンジニアの業務効率化ツールとしても真価を発揮します。",
+    "pricing": "$20 per month (Pro)",
+    "url": "https://cursor.com",
+    "affiliate_url": "https://cursor.com",
+    "marunage_cta": "まるなげCMOで開発体制を自動化する",
+    "recipe": {
+      "title": "爆速プロトタイプ制作レシピ",
+      "description": "非エンジニアでも、Cursorを使えば数時間でWebサービスのプロトタイプが完成します。",
+      "prompt": "@Files 全体の構造を把握した上で、新規顧客獲得のためのLPのワイヤーフレームを React/Next.js で作成してください。Tailwind CSS を使用したプレミアムなデザインを希望します。"
+    },
+    "meta": {
+      "lastUpdated": "2026-03-24T15:29:11.181Z",
+      "seoScore": 95,
+      "keywords": ["Cursor 使い方", "Cursor 比較", "Cursor 料金"]
+    }
+  },
+  {
+    "id": "perplexity",
+    "name": "Perplexity AI",
+    "category": "AI Search Engine",
+    "description": "検索エンジンとAIの融合。最新情報に基づいた正確な回答と出典を提供し、リサーチ時間を90%削減します。",
+    "pricing": "$20 per month (Pro)",
+    "url": "https://perplexity.ai",
+    "affiliate_url": "https://perplexity.ai",
+    "marunage_cta": "AIリサーチ業務を自動化したい方はこちら",
+    "recipe": {
+      "title": "市場調査自動化レシピ",
+      "description": "競合調査やトレンド分析を、出典付きで瞬時に完了させます。",
+      "prompt": "日本のAI SaaS業界における、直近3ヶ月の主要な資金調達イベントを一覧形式でまとめてください。各項目には公式のニュースソースURLを含めること。"
+    },
+    "meta": {
+      "lastUpdated": "2026-03-24T15:29:11.182Z",
+      "seoScore": 95,
+      "keywords": ["Perplexity AI 使い方", "Perplexity AI 比較"]
+    }
+  },
+  {
+    "id": "notion",
+    "name": "Notion AI",
+    "category": "Productivity / AI",
+    "description": "ドキュメント作成、タスク管理、ナレッジ共有をAIで統合。チームの生産性を劇的に向上させます。",
+    "pricing": "$10 per member/month",
+    "url": "https://www.notion.so",
+    "affiliate_url": "https://www.notion.so",
+    "marunage_cta": "Notionで社内ナレッジを自動構築したい方はこちら",
+    "recipe": {
+      "title": "社内Wiki自動要約レシピ",
+      "description": "散らばった議事録やドキュメントを、プロジェクト単位で瞬時に要約・整理します。",
+      "prompt": "このページの議事録から、決定事項、未決事項、およびネクストアクションを抽出してタスクリストに変換してください。"
+    },
+    "meta": {
+      "lastUpdated": "2026-03-24T15:29:11.182Z",
+      "seoScore": 95,
+      "keywords": ["Notion AI 活用"]
+    }
+  },
+  {
+    "id": "midjourney",
+    "name": "Midjourney",
+    "category": "Visual AI",
+    "description": "世界最高峰の画像生成AI。広告、Webデザイン、ブランディングに必要なクリエイティブを瞬時に生成します。",
+    "pricing": "$10+ per month",
+    "url": "https://midjourney.com",
+    "affiliate_url": "https://midjourney.com",
+    "marunage_cta": "AIでクリエイティブ制作コストを削減したい方はこちら",
+    "recipe": {
+      "title": "高級感あふれる広告画像生成",
+      "description": "プロのデザイナー級のビジュアルを生成するための高度なプロンプト設定です。",
+      "prompt": "/imagine prompt: Architecture photography of a minimalist futuristic office, glassmorphism, cinematic lighting, 8k resolution, elegant green accents --ar 16:9 --v 6.0"
+    },
+    "meta": {
+      "lastUpdated": "2026-03-25T01:30:00.000Z",
+      "seoScore": 98,
+      "keywords": ["Midjourney プロンプト", "Midjourney 使い方"]
+    }
+  },
+  {
+    "id": "canva",
+    "name": "Canva AI",
+    "category": "Design / Content Creation",
+    "description": "デザインの民主化。AIマジックにより、プロ級のSNS投稿、スライド、動画を数秒で生成。驚異的なROIを実現します。",
+    "pricing": "¥1,500+ per month (Pro)",
+    "url": "https://www.canva.com",
+    "affiliate_url": "https://www.canva.com",
+    "marunage_cta": "企業のブランドデザインをAIで効率化したい方はこちら",
+    "recipe": {
+      "title": "爆速クリエイティブ生成レシピ",
+      "description": "テキストからロゴ、バナー、プレゼン資料を自動生成し、デザイン外注コストをゼロに近づけます。",
+      "prompt": "新しいAIコンサルティングサービスのロゴデザイン案を5つ作成してください。キーワードは「信頼」「近未来」「丸投げ」。洗練されたミニマリストなスタイルを希望します。"
+    },
+    "meta": {
+      "lastUpdated": "2026-03-25T18:30:00.000Z",
+      "seoScore": 96,
+      "keywords": ["Canva AI 使い方", "Canva 画像生成"]
+    }
+  }
+]
