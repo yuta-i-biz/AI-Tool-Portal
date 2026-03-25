@@ -13,7 +13,7 @@ export default function Home() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative pt-40 pb-32 px-6 max-w-7xl mx-auto text-center z-10">
+      <section className="relative pt-40 pb-32 px-6 max-w-7xl mx-auto flex flex-col items-center text-center z-10">
         <div className="inline-flex items-center gap-3 mb-8 px-6 py-2 rounded-full border border-accent/20 bg-accent/5 backdrop-blur-xl animate-fade-in">
           <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
@@ -43,16 +43,16 @@ export default function Home() {
       </section>
 
       {/* Comparison Section */}
-      <section id="tools" className="py-32 px-6 max-w-7xl mx-auto relative z-10 scroll-mt-20">
-        <div className="mb-20">
-          <h2 className="text-5xl md:text-6xl font-black mb-6 tracking-tighter">ROI別・徹底比較</h2>
+      <section id="tools" className="py-32 px-6 max-w-7xl mx-auto flex flex-col items-center relative z-10 scroll-mt-20">
+        <div className="mb-20 flex flex-col items-center">
+          <h2 className="text-5xl md:text-6xl font-black mb-6 tracking-tighter text-center">ROI別・徹底比較</h2>
           <div className="h-2 w-40 bg-gradient-to-r from-accent to-accent-blue rounded-full"></div>
         </div>
         <ComparisonTable />
       </section>
 
       {/* Grid Section */}
-      <section className="py-32 px-6 max-w-7xl mx-auto relative z-10">
+      <section className="py-32 px-6 max-w-7xl mx-auto flex flex-col items-center relative z-10">
         <div className="flex flex-col md:flex-row items-end justify-between mb-24 gap-8">
           <div className="max-w-xl">
             <h2 className="text-5xl md:text-6xl font-black mb-6 tracking-tighter">稼ぐための厳選5ツール</h2>
