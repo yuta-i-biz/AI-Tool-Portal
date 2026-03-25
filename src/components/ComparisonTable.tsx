@@ -26,7 +26,7 @@ export default function ComparisonTable() {
         <table className="compare-table">
           <thead>
             <tr>
-              <th className="compare-header text-left">ツール名</th>
+              <th className="compare-header text-left sticky left-0 z-20 bg-background/90 backdrop-blur-md min-w-[120px]">ツール名</th>
               <th className="compare-header">ROI (収益性)</th>
               <th className="compare-header">導入難易度</th>
               <th className="compare-header">最適な用途</th>
@@ -36,7 +36,7 @@ export default function ComparisonTable() {
           <tbody>
             {tools.map((tool, index) => (
               <tr key={index} className="compare-row group">
-                <td className="compare-cell text-left font-bold text-lg whitespace-nowrap">{tool.name}</td>
+                <td className="compare-cell text-left font-bold text-lg whitespace-nowrap sticky left-0 z-20 bg-background/90 backdrop-blur-md border-r border-white/5">{tool.name}</td>
                 <td className="compare-cell text-accent font-black tracking-widest">{tool.roi}</td>
                 <td className="compare-cell text-gray-300">{tool.easeOfUse}</td>
                 <td className="compare-cell text-gray-400 text-sm">{tool.bestFor}</td>
