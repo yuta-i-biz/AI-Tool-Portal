@@ -11,27 +11,27 @@ interface Tool {
 
 export default function ToolCard({ tool }: { tool: any }) {
   return (
-    <div className="glass-card p-10 flex flex-col h-full group relative overflow-hidden">
+    <div className="glass-card p-6 md:p-10 flex flex-col h-full group relative overflow-hidden">
       {/* 装飾用バックライト */}
       <div className="absolute -top-24 -right-24 w-48 h-48 bg-accent/5 rounded-full blur-3xl group-hover:bg-accent/10 transition-all duration-700"></div>
 
-      <div className="flex justify-between items-start mb-10 relative z-10">
-        <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-white/5 to-white/0 flex items-center justify-center border border-white/10 group-hover:border-accent/40 group-hover:scale-110 transition-all duration-500 shadow-2xl">
-          <span className="text-3xl font-black premium-gradient">{tool.name[0]}</span>
+      <div className="flex justify-between items-start mb-8 md:mb-10 relative z-10">
+        <div className="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-gradient-to-br from-white/5 to-white/0 flex items-center justify-center border border-white/10 group-hover:border-accent/40 group-hover:scale-110 transition-all duration-500 shadow-2xl">
+          <span className="text-2xl md:text-3xl font-black premium-gradient">{tool.name[0]}</span>
         </div>
         <div className="flex flex-col items-end gap-2">
-          <span className="text-[10px] font-black uppercase tracking-[0.25em] text-accent bg-accent/10 px-4 py-1.5 rounded-full border border-accent/20">
+          <span className="text-[9px] md:text-[10px] font-black uppercase tracking-[0.25em] text-accent bg-accent/10 px-3 md:px-4 py-1.5 rounded-full border border-accent/20">
             {tool.category}
           </span>
         </div>
       </div>
       
       <div className="relative z-10 flex-grow">
-        <h3 className="text-3xl font-black mb-4 tracking-tighter group-hover:text-accent transition-colors duration-300">
+        <h3 className="text-2xl md:text-3xl font-black mb-4 tracking-tighter group-hover:text-accent transition-colors duration-300">
           {tool.name}
         </h3>
         
-        <p className="text-gray-400 text-base mb-10 leading-relaxed font-medium line-clamp-3">
+        <p className="text-gray-400 text-sm md:text-base mb-8 md:mb-10 leading-relaxed font-medium line-clamp-3">
           {tool.description}
         </p>
       </div>

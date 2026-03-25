@@ -36,17 +36,17 @@ export default async function ToolReviewPage({ params }: { params: Promise<{ id:
         </div>
       </nav>
 
-      <main className="pt-32 pb-32 px-6 max-w-5xl mx-auto relative z-10">
+      <main className="pt-32 pb-32 px-6 max-w-5xl mx-auto relative z-10 flex flex-col items-center md:items-start">
         {/* Header Section */}
-        <div className="mb-20 animate-slide-up">
-          <div className="inline-block mb-6 px-4 py-1.5 rounded-full border border-accent/20 bg-accent/5 text-accent text-[10px] font-black tracking-widest uppercase">
+        <div className="mb-16 md:mb-20 animate-slide-up text-center md:text-left w-full">
+          <div className="inline-block mb-6 px-4 py-1.5 rounded-full border border-accent/20 bg-accent/5 text-accent text-[9px] md:text-[10px] font-black tracking-widest uppercase">
             {tool.category}
           </div>
-          <h1 className="text-6xl md:text-8xl font-black mb-10 tracking-tighter leading-[0.9]">
-            {tool.name} <br />
+          <h1 className="text-4xl md:text-6xl lg:text-8xl font-black mb-10 tracking-tighter leading-[1.1] md:leading-[0.9]">
+            {tool.name} <br className="hidden md:block" />
             <span className="premium-gradient">徹底活用ガイド</span>
           </h1>
-          <p className="text-2xl text-gray-400 font-medium leading-relaxed max-w-3xl">
+          <p className="text-lg md:text-2xl text-gray-400 font-medium leading-relaxed max-w-3xl mx-auto md:mx-0">
             {tool.description}
           </p>
         </div>

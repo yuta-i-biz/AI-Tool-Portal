@@ -18,11 +18,11 @@ const tools: ToolComparison[] = [
 export default function ComparisonTable() {
   return (
     <div className="glass-panel overflow-hidden my-16">
-      <div className="p-8 border-b border-white/5">
-        <h3 className="text-2xl font-black tracking-tight">AIツール ROI比較テーブル</h3>
-        <p className="text-gray-400 text-sm mt-2">実務での「稼ぎやすさ」と「導入コスト」のバランスを評価</p>
+      <div className="p-6 md:p-10 border-b border-white/5 text-center flex flex-col items-center">
+        <h3 className="text-2xl md:text-3xl font-black tracking-tight">AIツール ROI比較テーブル</h3>
+        <p className="text-gray-400 text-sm mt-3 max-w-lg">実務での「稼ぎやすさ」と「導入コスト」のバランスをプロの視点で評価</p>
       </div>
-      <div className="overflow-x-auto">
+      <div className="compare-container">
         <table className="compare-table">
           <thead>
             <tr>
@@ -36,14 +36,14 @@ export default function ComparisonTable() {
           <tbody>
             {tools.map((tool, index) => (
               <tr key={index} className="compare-row group">
-                <td className="compare-cell text-left font-bold text-lg">{tool.name}</td>
-                <td className="compare-cell text-accent font-black">{tool.roi}</td>
+                <td className="compare-cell text-left font-bold text-lg whitespace-nowrap">{tool.name}</td>
+                <td className="compare-cell text-accent font-black tracking-widest">{tool.roi}</td>
                 <td className="compare-cell text-gray-300">{tool.easeOfUse}</td>
                 <td className="compare-cell text-gray-400 text-sm">{tool.bestFor}</td>
                 <td className="compare-cell">
                   <a 
                     href={tool.link} 
-                    className="inline-flex items-center justify-center px-4 py-2 rounded-lg bg-accent/10 border border-accent/30 text-accent text-sm font-bold hover:bg-accent hover:text-black transition-all duration-300"
+                    className="inline-flex items-center justify-center px-6 py-2.5 rounded-lg bg-accent/10 border border-accent/30 text-accent text-sm font-black hover:bg-accent hover:text-black transition-all duration-300 whitespace-nowrap"
                   >
                     詳細 / 試す
                   </a>
