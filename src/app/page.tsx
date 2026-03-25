@@ -22,9 +22,9 @@ export default function Home() {
           <span className="text-accent text-[10px] font-black tracking-[0.3em] uppercase">Marunage AI Ecosystem 2026</span>
         </div>
 
-        <h1 className="text-5xl md:text-7xl lg:text-9xl font-black mb-12 tracking-tighter leading-[1.1] md:leading-[0.9] animate-slide-up">
-          AIで、<br className="hidden md:block" />
-          <span className="premium-gradient">稼ぐ。</span>
+        <h1 className="text-5xl md:text-7xl lg:text-9xl font-black mb-12 tracking-tighter leading-[1.1] md:leading-[1] animate-slide-up">
+          <span className="keep-phrase">AIで、</span>
+          <span className="keep-phrase premium-gradient">稼ぐ。</span>
         </h1>
 
         <p className="text-lg md:text-2xl text-gray-400 max-w-3xl mx-auto mb-16 leading-relaxed font-medium animate-fade-in-delayed px-4">
@@ -43,16 +43,16 @@ export default function Home() {
       </section>
 
       {/* Comparison Section */}
-      <section id="tools" className="py-32 px-6 max-w-7xl mx-auto flex flex-col items-center relative z-10 scroll-mt-20">
-        <div className="mb-20 flex flex-col items-center">
-          <h2 className="text-5xl md:text-6xl font-black mb-6 tracking-tighter text-center">ROI別・徹底比較</h2>
-          <div className="h-2 w-40 bg-gradient-to-r from-accent to-accent-blue rounded-full"></div>
+      <section id="tools" className="py-40 px-6 max-w-7xl mx-auto flex flex-col items-center relative z-10 scroll-mt-20">
+        <div className="mb-24 flex flex-col items-center">
+          <h2 className="text-4xl md:text-6xl font-black mb-8 tracking-tighter text-center">ROI別・徹底比較</h2>
+          <div className="h-2 w-48 bg-gradient-to-r from-accent to-accent-blue rounded-full"></div>
         </div>
         <ComparisonTable />
       </section>
 
       {/* Grid Section */}
-      <section className="py-32 px-6 max-w-7xl mx-auto flex flex-col items-center relative z-10">
+      <section className="py-40 px-6 max-w-7xl mx-auto flex flex-col items-center relative z-10">
         <div className="flex flex-col md:flex-row items-center md:items-end justify-between mb-24 gap-8 w-full">
           <div className="max-w-xl text-center md:text-left">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 tracking-tighter">稼ぐための厳選5ツール</h2>

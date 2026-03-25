@@ -38,40 +38,40 @@ export default async function ToolReviewPage({ params }: { params: Promise<{ id:
 
       <main className="pt-32 pb-32 px-6 max-w-5xl mx-auto relative z-10 flex flex-col items-center md:items-start">
         {/* Header Section */}
-        <div className="mb-16 md:mb-20 animate-slide-up text-center md:text-left w-full">
-          <div className="inline-block mb-6 px-4 py-1.5 rounded-full border border-accent/20 bg-accent/5 text-accent text-[9px] md:text-[10px] font-black tracking-widest uppercase">
+        <div className="mb-24 animate-slide-up text-center md:text-left w-full flex flex-col items-center md:items-start">
+          <div className="inline-block mb-8 px-4 py-1.5 rounded-full border border-accent/20 bg-accent/5 text-accent text-[9px] md:text-[10px] font-black tracking-widest uppercase">
             {tool.category}
           </div>
-          <h1 className="text-4xl md:text-6xl lg:text-8xl font-black mb-10 tracking-tighter leading-[1.1] md:leading-[0.9]">
-            {tool.name} <br className="hidden md:block" />
-            <span className="premium-gradient">徹底活用ガイド</span>
+          <h1 className="text-4xl md:text-6xl lg:text-8xl font-black mb-12 tracking-tighter leading-[1.1] md:leading-[1]">
+            <span className="keep-phrase">{tool.name}</span> <br className="hidden md:block" />
+            <span className="keep-phrase premium-gradient">徹底活用ガイド</span>
           </h1>
-          <p className="text-lg md:text-2xl text-gray-400 font-medium leading-relaxed max-w-3xl mx-auto md:mx-0">
+          <p className="text-lg md:text-2xl text-gray-400 font-medium leading-relaxed max-w-3xl mx-auto md:mx-0 px-4 md:px-0">
             {tool.description}
           </p>
         </div>
 
         {/* Action Bar */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-24">
-          <div className="glass-panel p-10 flex flex-col items-center text-center justify-between">
-            <div>
-              <span className="text-[10px] font-black text-gray-500 uppercase tracking-widest mb-4 block">Official / Affiliate</span>
-              <h3 className="text-3xl font-black mb-6">{tool.name} を試す</h3>
-              <p className="text-gray-400 mb-8 font-medium">価格目安: {tool.pricing}</p>
+          <div className="glass-panel p-8 md:p-12 flex flex-col items-center text-center justify-between min-h-[400px]">
+            <div className="mb-8">
+              <span className="text-[10px] font-black text-gray-500 uppercase tracking-widest mb-6 block">Official / Affiliate</span>
+              <h3 className="text-4xl font-black mb-4">{tool.name} を試す</h3>
+              <p className="text-gray-400 font-medium">価格目安: {tool.pricing}</p>
             </div>
-            <a href={tool.affiliate_url} target="_blank" rel="noopener noreferrer" className="btn-premium w-full">
+            <a href={tool.affiliate_url} target="_blank" rel="noopener noreferrer" className="btn-premium w-full text-lg py-5">
               公式サイトで開始する
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              <svg className="w-6 h-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
             </a>
           </div>
 
-          <div className="glass-panel p-10 flex flex-col items-center text-center justify-between border-accent/20 bg-accent/5">
-            <div>
-              <span className="text-[10px] font-black text-accent uppercase tracking-widest mb-4 block">Professional Consulting</span>
-              <h3 className="text-3xl font-black mb-6">導入を「丸投げ」する</h3>
-              <p className="text-gray-400 mb-8 font-medium">導入から運用まで、専属CMOチームが代行します。</p>
+          <div className="glass-panel p-8 md:p-12 flex flex-col items-center text-center justify-between border-accent/20 bg-accent/5 min-h-[400px]">
+            <div className="mb-8">
+              <span className="text-[10px] font-black text-accent uppercase tracking-widest mb-6 block">Professional Consulting</span>
+              <h3 className="text-4xl font-black mb-4">導入を「丸投げ」する</h3>
+              <p className="text-gray-400 font-medium">導入から運用まで、専属CMOチームが代行します。</p>
             </div>
-            <button className="w-full px-10 py-5 rounded-full border border-accent/40 text-accent font-black hover:bg-accent hover:text-black transition-all">
+            <button className="w-full px-10 py-5 rounded-full border border-accent/40 text-accent font-black text-lg hover:bg-accent hover:text-black transition-all">
               {tool.marunage_cta || "まるなげCMOへ相談"}
             </button>
           </div>
@@ -84,21 +84,18 @@ export default async function ToolReviewPage({ params }: { params: Promise<{ id:
             <div className="h-1.5 w-24 bg-accent rounded-full"></div>
           </div>
           
-          <div className="glass-panel p-10 relative overflow-hidden group">
-            <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-100 transition-opacity">
+          <div className="glass-panel p-8 md:p-16 relative overflow-hidden group">
+            <div className="absolute top-0 right-0 p-6 opacity-20 group-hover:opacity-100 transition-opacity">
                <span className="text-xs font-black uppercase tracking-widest">Recipe Key</span>
             </div>
-            <h4 className="text-2xl font-black mb-6 premium-gradient">{tool.recipe.title}</h4>
-            <p className="text-gray-300 mb-10 text-lg leading-relaxed">{tool.recipe.description}</p>
+            <h4 className="text-3xl font-black mb-8 premium-gradient">{tool.recipe.title}</h4>
+            <p className="text-gray-300 mb-12 text-lg md:text-xl leading-relaxed">{tool.recipe.description}</p>
             
-            <div className="bg-black/40 rounded-2xl p-8 border border-white/5 relative">
-              <div className="absolute top-4 right-6 flex items-center gap-2">
+            <div className="bg-black/60 rounded-3xl p-8 md:p-12 border border-white/10 relative">
+              <div className="absolute top-6 right-8 flex items-center gap-2">
                 <span className="text-[10px] text-gray-600 font-bold uppercase tracking-widest">Gemini / GPT Prompt</span>
-                <button className="text-accent hover:text-white transition-colors">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg>
-                </button>
               </div>
-              <pre className="text-accent font-mono text-sm whitespace-pre-wrap leading-relaxed pt-6">
+              <pre className="text-accent font-mono text-base whitespace-pre-wrap leading-relaxed pt-8">
                 {tool.recipe.prompt}
               </pre>
             </div>

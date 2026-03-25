@@ -38,6 +38,11 @@ body {
 h1, h2, h3, h4 {
   word-break: keep-all;
   overflow-wrap: anywhere;
+  line-height: 1.2;
+}
+
+.keep-phrase {
+  display: inline-block;
 }
 
 /* --- プレミアム背景システム (Deep Space) --- */
@@ -48,7 +53,7 @@ h1, h2, h3, h4 {
   width: 100vw;
   height: 100vh;
   z-index: -1;
-  background: radial-gradient(circle at 50% 50%, #0f172a 0%, #020617 100%);
+  background: radial-gradient(circle at 0% 0%, #0f172a 0%, #020617 100%);
   overflow: hidden;
 }
 
@@ -101,11 +106,14 @@ h1, h2, h3, h4 {
 /* --- コンポーネントスタイル --- */
 .glass-panel {
   background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 2rem;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 2.5rem;
+  box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.7);
+  width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .glass-card {
@@ -142,33 +150,37 @@ h1, h2, h3, h4 {
   box-shadow: 0 15px 40px rgba(34, 197, 94, 0.6);
 }
 
-/* 比較テーブル用装飾 */
+/* 比較テーブル用装飾 - レスポンシブ & プレミアム */
+.compare-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 2rem 0;
+}
+
 .compare-table {
   width: 100%;
+  min-width: 900px;
   border-collapse: separate;
   border-spacing: 0;
 }
 
 .compare-header {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 1.5rem;
-  font-weight: 800;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 2rem 1.5rem;
+  font-weight: 900;
   text-align: center;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-}
-
-.compare-row {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  transition: background 0.3s;
-}
-
-.compare-row:hover {
-  background: rgba(255, 255, 255, 0.02);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.7rem;
 }
 
 .compare-cell {
-  padding: 1.25rem;
+  padding: 2.5rem 1.5rem;
   text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
 }
 
 /* --- アニメーション --- */
