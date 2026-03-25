@@ -18,7 +18,7 @@ export default async function ToolReviewPage({ params }: { params: Promise<{ id:
   }
 
   return (
-    <div className="min-h-screen relative text-gray-100 selection:bg-accent selection:text-black">
+    <div className="min-h-screen w-full relative text-gray-100 selection:bg-accent selection:text-black flex flex-col items-center">
       {/* プレミアム背景 */}
       <div className="bg-container">
         <div className="bg-grid opacity-20"></div>

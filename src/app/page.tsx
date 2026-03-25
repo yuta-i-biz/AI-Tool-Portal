@@ -4,7 +4,7 @@ import toolsData from '@/data/tools.json';
 
 export default function Home() {
   return (
-    <main className="min-h-screen relative text-gray-100 selection:bg-accent selection:text-black overflow-hidden">
+    <main className="min-h-screen w-full relative text-gray-100 selection:bg-accent selection:text-black overflow-hidden flex flex-col items-center">
       {/* プレミアム背景システム */}
       <div className="bg-container">
         <div className="bg-grid"></div>
