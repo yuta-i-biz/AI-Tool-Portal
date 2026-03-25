@@ -1,5 +1,6 @@
 import ToolCard from '@/components/ToolCard';
 import ComparisonTable from '@/components/ComparisonTable';
+import Footer from '@/components/Footer';
 import toolsData from '@/data/tools.json';
 
 export default function Home() {
@@ -33,12 +34,9 @@ export default function Home() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-8 justify-center items-center animate-fade-in-delayed">
-          <a href="#tools" className="btn-premium text-lg px-16 py-5">
+          <a href="#tools" className="btn-premium text-lg px-20 py-6">
             厳選ツールを比較する
           </a>
-          <button className="px-10 py-5 rounded-full border border-white/10 hover:bg-white/5 transition-all text-lg font-bold backdrop-blur-md">
-            導入ガイドをDL
-          </button>
         </div>
       </section>
 
@@ -62,65 +60,13 @@ export default function Home() {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
-          {toolsData.slice(0, 5).map((tool) => (
+          {toolsData.slice(0, 6).map((tool) => (
             <ToolCard key={tool.id} tool={tool} />
           ))}
-          {/* 追加のCTAカード */}
-          <div className="glass-card p-10 flex flex-col items-center justify-center text-center border-dashed border-accent/30 group bg-accent/5">
-             <div className="text-4xl mb-6">🚀</div>
-             <h3 className="text-2xl font-black mb-4">最適な構成を知りたい？</h3>
-             <p className="text-gray-400 text-sm mb-8 leading-relaxed">あなたのビジネスに最適なAIチーム構成を提案します。</p>
-             <button className="text-accent font-black uppercase tracking-widest text-xs hover:underline">
-               無料診断はこちら
-             </button>
-          </div>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-32 px-6 border-t border-white/5 relative z-10">
-        <div className="max-w-7xl mx-auto text-center">
-          <div className="mb-16 inline-block">
-            <span className="text-3xl font-black tracking-[0.5em] text-white opacity-20 hover:opacity-100 transition-opacity duration-1000">
-              JIBUN KABUSHIKI KAISHA
-            </span>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-left mb-20 opacity-60">
-            <div>
-              <h4 className="text-white font-black mb-6 text-xs uppercase tracking-widest">Tools</h4>
-              <ul className="space-y-4 text-sm font-medium">
-                <li><a href="#" className="hover:text-accent transition-colors">Efficiency</a></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Marketing</a></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Development</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-white font-black mb-6 text-xs uppercase tracking-widest">Resources</h4>
-              <ul className="space-y-4 text-sm font-medium">
-                <li><a href="#" className="hover:text-accent transition-colors">Guides</a></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Tutorials</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-white font-black mb-6 text-xs uppercase tracking-widest">Company</h4>
-              <ul className="space-y-4 text-sm font-medium">
-                <li><a href="#" className="hover:text-accent transition-colors">About</a></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Contact</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-white font-black mb-6 text-xs uppercase tracking-widest">Legal</h4>
-              <ul className="space-y-4 text-sm font-medium">
-                <li><a href="#" className="hover:text-accent transition-colors">Privacy</a></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Terms</a></li>
-              </ul>
-            </div>
-          </div>
-          <p className="text-gray-600 text-[10px] font-black uppercase tracking-[0.3em]">
-            © 2026 AI Tool Portal. Next Generation Affiliate Marketing System.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }

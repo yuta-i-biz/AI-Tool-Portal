@@ -2,6 +2,7 @@ import React from 'react';
 import { notFound } from 'next/navigation';
 import toolsData from '@/data/tools.json';
 import Link from 'next/link';
+import Footer from '@/components/Footer';
 
 export function generateStaticParams() {
   return toolsData.map((tool) => ({
@@ -52,10 +53,10 @@ export default async function ToolReviewPage({ params }: { params: Promise<{ id:
         </div>
 
         {/* Action Bar */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full">
-          <div className="glass-panel p-10 md:p-14 flex flex-col items-center text-center justify-between min-h-[500px]">
+        <div className="flex justify-center w-full">
+          <div className="glass-panel p-10 md:p-14 flex flex-col items-center text-center justify-between min-h-[500px] max-w-2xl border-accent/20 bg-accent/5">
             <div className="mb-10">
-              <span className="text-[10px] font-black text-gray-500 uppercase tracking-widest mb-8 block">Official / Affiliate</span>
+              <span className="text-[10px] font-black text-accent uppercase tracking-widest mb-8 block">Official / Affiliate</span>
               <h3 className="text-4xl md:text-5xl font-black mb-6">{tool.name} を試す</h3>
               <p className="text-gray-400 font-medium text-lg">価格目安: {tool.pricing}</p>
             </div>
@@ -63,17 +64,6 @@ export default async function ToolReviewPage({ params }: { params: Promise<{ id:
               公式サイトで開始する
               <svg className="w-6 h-6 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
             </a>
-          </div>
-
-          <div className="glass-panel p-10 md:p-14 flex flex-col items-center text-center justify-between border-accent/20 bg-accent/5 min-h-[500px]">
-            <div className="mb-10">
-              <span className="text-[10px] font-black text-accent uppercase tracking-widest mb-8 block">Professional Consulting</span>
-              <h3 className="text-4xl md:text-5xl font-black mb-6">導入を「丸投げ」する</h3>
-              <p className="text-gray-400 font-medium text-lg">導入から運用まで、専属CMOチームが代行します。</p>
-            </div>
-            <button className="w-full px-10 py-6 rounded-full border border-accent/40 text-accent font-black text-xl hover:bg-accent hover:text-black transition-all">
-              {tool.marunage_cta || "まるなげCMOへ相談"}
-            </button>
           </div>
         </div>
 
@@ -114,6 +104,7 @@ export default async function ToolReviewPage({ params }: { params: Promise<{ id:
            </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
