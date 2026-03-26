@@ -72,7 +72,7 @@
       "Deep Research機能により1時間分のリサーチを1分で完了"
     ],
     "cons": [
-      "Shopping Agentの精度はまだ北米・欧州が中心",
+      "Shopping Agent的精度はまだ北米・欧州が中心",
       "健康データの共有にはプライバシー設定の精査が必要"
     ],
     "pricing_details": [
@@ -268,8 +268,8 @@
     "description": "2026年3月、新型 GPT-5.4 搭載。Soraによる動画生成、Deep Research、高度なショッピング機能を統合。",
     "pricing": "$20 per month (Plus)",
     "url": "https://chatgpt.com",
-    "affiliate_url": "https://openai.com",
-    "marunage_cta": "ChatGPTを社内導入して組織を自動化したい方はこちら",
+    "affiliate_url": "http://localhost:3000/dashboard/marunage?ref=portal_chatgpt",
+    "marunage_cta": "ChatGPT導入・組織化をまるなげする",
     "features": [
       { "title": "GPT-5.4 Reasoning", "description": "100万トークンの視野と、人間を超える論理的推論を備えた最強モデル。誤回答が27%減少。", "icon": "🧠" },
       { "title": "Sora Video Integration", "description": "チャットから直接、720p/1080pのシネマティックな動画を月間50本以上生成可能。", "icon": "🎥" },
@@ -320,8 +320,8 @@
     "description": "Google Workspaceと一体化した「Ambient AI」。Gemini 3.1 Pro搭載、生活の隅々にAIが溶け込む体験を。",
     "pricing": "$19.99 per month (AI Pro)",
     "url": "https://gemini.google.com",
-    "affiliate_url": "https://workspace.google.com",
-    "marunage_cta": "Google WorkspaceとAIを連携させたい方はこちら",
+    "affiliate_url": "http://localhost:3000/dashboard/marunage?ref=portal_gemini",
+    "marunage_cta": "Google AI活用の自動化を相談する",
     "features": [
       { "title": "Ambient Layer 3.1", "description": "ユーザーの行動を先回りし、メール作成、予定調整、ファイル整理を自律的に行います。", "icon": "🌐" },
       { "title": "1 Million Tokens Default", "description": "Gemini 3.1 Proにより、全資料・全メール履歴を常にコンテキストに入れて会話可能。", "icon": "🔋" },
@@ -372,8 +372,8 @@
     "description": "2026年3月、Claude 4.6 (Opus/Sonnet) 公開。新機能「Computer Use」により、AIが直接PCを操作して業務を代行。",
     "pricing": "$20 per month (Pro)",
     "url": "https://claude.ai",
-    "affiliate_url": "https://claude.ai",
-    "marunage_cta": "高品質なコンテンツ作成をAI化したい方はこちら",
+    "affiliate_url": "http://localhost:3000/dashboard/marunage?ref=portal_claude",
+    "marunage_cta": "Claudeによる高度な業務自動化を依頼する",
     "features": [
       { "title": "Claude 4.6 (Opus/Sonnet)", "description": "100万トークンの視界と、人間を上回る情緒的な文章表現、高度な推論を搭載。", "icon": "🧩" },
       { "title": "Computer Use (Research Preview)", "description": "クリック、スクロール、タイピングをAIが自ら行い、ウェブ閲覧やアプリ操作を代行します。", "icon": "🖱️" },
