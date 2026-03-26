@@ -32,7 +32,7 @@ export default async function ToolReviewPage({ params }: { params: Promise<{ id:
             AI <span className="text-accent group-hover:premium-gradient">PORTAL</span>
           </Link>
           <Link href="/" className="text-sm font-bold text-gray-400 hover:text-white transition-colors">
-            ← ツール一覧に戻る
+            ← スクール一覧に戻る
           </Link>
         </div>
       </nav>
@@ -45,7 +45,7 @@ export default async function ToolReviewPage({ params }: { params: Promise<{ id:
           </div>
           <h1 className="text-4xl md:text-6xl lg:text-8xl font-black mb-12 tracking-tighter leading-[1.3] md:leading-[1.1] md:whitespace-nowrap">
             <span className="keep-phrase">{tool.name}</span> <wbr />
-            <span className="keep-phrase premium-gradient">徹底活用ガイド</span>
+            <span className="keep-phrase premium-gradient">受講・キャリアガイド</span>
           </h1>
           <p className="text-lg md:text-2xl text-gray-400 font-medium leading-relaxed max-w-3xl mx-auto px-4">
             {tool.description}
@@ -58,10 +58,10 @@ export default async function ToolReviewPage({ params }: { params: Promise<{ id:
             <div className="flex-grow">
               <span className="text-[10px] font-black text-accent uppercase tracking-[0.3em] mb-4 block">Official / Affiliate</span>
               <h3 className="text-3xl md:text-5xl font-black mb-4 tracking-tighter">{tool.name}</h3>
-              <p className="text-gray-400 font-medium text-lg italic">価格目安: {tool.pricing}</p>
+              <p className="text-gray-400 font-medium text-lg italic">通常受講料: {tool.pricing}</p>
             </div>
             <a href={tool.affiliate_url} target="_blank" rel="noopener noreferrer" className="btn-premium px-12 py-5 text-lg group whitespace-nowrap">
-              公式サイトで開始
+              無料カウンセリングを予約
               <svg className="w-5 h-5 ml-3 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
             </a>
           </div>
@@ -71,7 +71,7 @@ export default async function ToolReviewPage({ params }: { params: Promise<{ id:
         {tool.features && (
           <section className="w-full">
             <div className="mb-16">
-              <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tight">主要機能</h2>
+              <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tight">カリキュラムの特長</h2>
               <div className="h-2.5 w-40 bg-accent rounded-full"></div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -209,10 +209,10 @@ export default async function ToolReviewPage({ params }: { params: Promise<{ id:
           </section>
         )}
 
-        {/* AI Recipe Section */}
+        {/* Career Recipe Section */}
         <section className="w-full">
           <div className="mb-16">
-            <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tight">AI実践レシピ</h2>
+            <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tight">卒業後のキャリア・実践例</h2>
             <div className="h-2.5 w-40 bg-accent rounded-full"></div>
           </div>
           
@@ -238,12 +238,12 @@ export default async function ToolReviewPage({ params }: { params: Promise<{ id:
         {tool.pricing_details && (
           <section className="w-full">
             <div className="mb-16">
-              <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tight">料金プラン</h2>
+              <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tight">コース料金・期間</h2>
               <div className="h-2.5 w-40 bg-accent rounded-full"></div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {tool.pricing_details.map((plan: any, index: number) => (
-                <div key={index} className={`glass-panel p-10 border-white/5 ${plan.plan === 'Pro' ? 'bg-accent/10 border-accent/40 scale-105' : ''}`}>
+                <div key={index} className={`glass-panel p-10 border-white/5 ${plan.plan.includes('8週') || plan.plan.includes('6ヶ月') ? 'bg-accent/10 border-accent/40 scale-105' : ''}`}>
                   <h4 className="text-xl font-black mb-2 text-white">{plan.plan}</h4>
                   <div className="text-4xl font-black mb-8 premium-gradient">{plan.price}</div>
                   <ul className="space-y-3">
@@ -256,6 +256,7 @@ export default async function ToolReviewPage({ params }: { params: Promise<{ id:
                 </div>
               ))}
             </div>
+            <p className="mt-8 text-center text-gray-500 text-sm italic">※ 表示価格は政府給付金（最大70〜80%）を適用した後の実質負担額の目安です。</p>
           </section>
         )}
 

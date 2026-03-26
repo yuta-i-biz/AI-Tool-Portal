@@ -2,24 +2,24 @@ import React from 'react';
 import toolsData from '@/data/tools.json';
 
 export default function ComparisonTable() {
-  // 比較テーブルに表示する特定のツールを定義
-  const displayIds = ['cursor', 'notion', 'perplexity', 'canva'];
+  // 比較テーブルに表示する特定のスクールを定義
+  const displayIds = ['techacademy-ai', 'aidemy-premium', 'dmm-webcamp-ai'];
   const displayTools = toolsData.filter(t => displayIds.includes(t.id));
 
   return (
     <div className="glass-panel overflow-hidden my-16 w-full animate-fade-in">
       <div className="p-6 md:p-10 border-b border-white/5 text-center flex flex-col items-center">
-        <h3 className="text-2xl md:text-3xl font-black tracking-tight">AIツール ROI比較テーブル</h3>
-        <p className="text-gray-400 text-sm mt-3 max-w-lg">実務での「稼ぎやすさ」と「導入コスト」のバランスをプロの視点で評価</p>
+        <h3 className="text-2xl md:text-3xl font-black tracking-tight">AIスクール 給付金・比較テーブル</h3>
+        <p className="text-gray-400 text-sm mt-3 max-w-lg">政府のリスキリング支援（最大70〜80%還付）を活用した、実技・キャリア特化型の比較</p>
       </div>
       <div className="compare-container">
         <table className="compare-table">
           <thead>
             <tr>
-              <th className="compare-header text-left sticky left-0 z-20 bg-background/90 backdrop-blur-md min-w-[140px]">ツール名</th>
-              <th className="compare-header">ROI (収益性)</th>
-              <th className="compare-header">導入難易度</th>
-              <th className="compare-header text-left">最適な用途</th>
+              <th className="compare-header text-left sticky left-0 z-20 bg-background/90 backdrop-blur-md min-w-[140px]">スクール名</th>
+              <th className="compare-header">給付金 還付率</th>
+              <th className="compare-header">受講期間</th>
+              <th className="compare-header text-left">特筆すべき強み</th>
               <th className="compare-header">アクション</th>
             </tr>
           </thead>
@@ -35,10 +35,10 @@ export default function ComparisonTable() {
                   </div>
                 </td>
                 <td className="compare-cell text-accent font-black tracking-widest text-xl">
-                  {tool.id === 'cursor' || tool.id === 'perplexity' ? '☆☆☆☆☆' : '☆☆☆☆'}
+                  {tool.id === 'aidemy-premium' ? '80%' : '70%'}
                 </td>
                 <td className="compare-cell text-gray-300">
-                  {tool.id === 'notion' || tool.id === 'canva' ? '低' : '中'}
+                  {tool.id === 'techacademy-ai' ? '4〜16週' : tool.id === 'aidemy-premium' ? '3〜6ヶ月' : '4〜12週'}
                 </td>
                 <td className="compare-cell text-gray-400 text-sm italic text-left min-w-[200px]">
                   {tool.description.split('。')[0]}

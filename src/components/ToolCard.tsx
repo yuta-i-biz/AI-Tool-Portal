@@ -38,7 +38,7 @@ export default function ToolCard({ tool }: { tool: any }) {
       
       <div className="pt-8 border-t border-white/5 flex items-center justify-between relative z-10">
         <div className="flex flex-col">
-          <span className="text-[10px] text-gray-500 font-black uppercase tracking-[0.2em] mb-1.5">Expected ROI</span>
+          <span className="text-[10px] text-gray-500 font-black uppercase tracking-[0.2em] mb-1.5">給付金適用後</span>
           <span className="text-lg font-black text-white tracking-tight">{tool.pricing}</span>
         </div>
         
