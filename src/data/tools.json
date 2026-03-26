@@ -3,100 +3,419 @@
     "id": "cursor",
     "name": "Cursor",
     "category": "AI Code Editor",
-    "description": "AIと融合した最強のエディタ。エンジニアだけでなく、非エンジニアの業務効率化ツールとしても真価を発揮します。",
+    "description": "2026年3月、新型モデル「Composer 2」を搭載。AIとの「完全融合」により、エンジニアの生産性を20倍以上に引き上げます。",
     "pricing": "$20 per month (Pro)",
     "url": "https://cursor.com",
     "affiliate_url": "https://cursor.com",
     "marunage_cta": "まるなげCMOで開発体制を自動化する",
+    "features": [
+      { "title": "Composer 2 (Kimi 2.5 Hybrid)", "description": "CursorBench 61.3を記録した最強モデル。数千ファイルに及ぶ変更をバグなく自律完遂します。", "icon": "✨" },
+      { "title": "Agentic Auto Mode", "description": "人間の承認を待たずに、AIが自律的にデバッグとテストを繰り返してコードを完成させます。", "icon": "🤖" },
+      { "title": "Context Maximum 2.0", "description": "プロジェクト全体だけでなく、依存ライブラリの全仕様を把握した上で最適な提案を行います。", "icon": "🔋" }
+    ],
+    "pros": [
+      "Composer 2による圧倒的な開発速度",
+      "バグ発見率が従来比で3倍に向上",
+      "非エンジニアでもフルスタックアプリが数分で構築可能"
+    ],
+    "cons": [
+      "Ultraプラン ($200/mo) でないと最新のAgent機能を使い倒せない",
+      "Kimi 2.5ベースのため一部の日本独自の慣習に再学習が必要な場合がある"
+    ],
+    "pricing_details": [
+      { "plan": "Hobby", "price": "$0", "features": ["Basic completions", "Limited Composer 2 access"] },
+      { "plan": "Pro", "price": "$20/mo", "features": ["Unlimited completions", "500 premium requests/mo", "Music generation support"] },
+      { "plan": "Pro+", "price": "$60/mo", "features": ["3x usage credits", "Early access to Sora integration"] },
+      { "plan": "Ultra", "price": "$200/mo", "features": ["20x usage credits", "Proprietary reinforcement learning tuning", "VIP support"] }
+    ],
+    "comparison": {
+      "main_tool": { "features": ["Composer 2の自律性", "IDEネイティブ統合", "最強のRepo理解力"] },
+      "alt_tool": { "name": "VS Code + Copilot 2026", "features": ["サードパーティ型の限界", "部分的な修正に限定", "応答速度の遅延"] },
+      "summary": "2026年、Cursorは「エディタ」から「自律開発エージェント」へと進化しました。"
+    },
+    "cost_reduction": {
+      "title": "人件費削減シミュレーション",
+      "subtitle": "Composer 2導入による「自律開発」の威力",
+      "before": { "hours": 40, "cost": "¥200,000", "label": "通常の開発（週）" },
+      "after": { "hours": 2, "cost": "¥10,000", "label": "Cursor Composer 2活用（週）" },
+      "saving_ratio": "95%",
+      "monthly_saving": "¥760,000"
+    },
     "recipe": {
-      "title": "爆速プロトタイプ制作レシピ",
-      "description": "非エンジニアでも、Cursorを使えば数時間でWebサービスのプロトタイプが完成します。",
-      "prompt": "@Files 全体の構造を把握した上で、新規顧客獲得のためのLPのワイヤーフレームを React/Next.js で作成してください。Tailwind CSS を使用したプレミアムなデザインを希望します。"
+      "title": "自律デバッグ＆デプロイレシピ",
+      "description": "Composer 2にエラーを投げれば、修正からデプロイ確認までをAIが一人で完結させます。",
+      "prompt": "@Files 最新のNext.js 16の仕様に基づき、DB層のリファクタリングと型安全性の強化を自律的に行ってください。エラーがあれば自分自身でテストを書き、パスするまで修正を繰り返してください。"
     },
     "meta": {
-      "lastUpdated": "2026-03-24T15:29:11.181Z",
-      "seoScore": 95,
-      "keywords": ["Cursor 使い方", "Cursor 比較", "Cursor 料金"]
+      "lastUpdated": "2026-03-26T10:00:00.000Z",
+      "seoScore": 99,
+      "keywords": ["Cursor Composer 2 使い方", "Cursor Ultraプラン 比較", "AI 自律開発"]
     }
   },
   {
     "id": "perplexity",
     "name": "Perplexity AI",
     "category": "AI Search Engine",
-    "description": "検索エンジンとAIの融合。最新情報に基づいた正確な回答と出典を提供し、リサーチ時間を90%削減します。",
+    "description": "「Perplexity Health」など垂直統合型検索へ進化。2026年最新モデル Comet によるショッピング機能も搭載。",
     "pricing": "$20 per month (Pro)",
     "url": "https://perplexity.ai",
     "affiliate_url": "https://perplexity.ai",
     "marunage_cta": "AIリサーチ業務を自動化したい方はこちら",
+    "features": [
+      { "title": "Comet Shopping Agent", "description": "Amazon等のECサイトから最適な商品を価格・レビュー・納期を比較して自律的に選定します。", "icon": "🛒" },
+      { "title": "Perplexity Health", "description": "Apple Health等のウェアラブル端末と連携し、エビデンスに基づいた健康管理をAIが行います。", "icon": "🏥" },
+      { "title": "Claude 4.6/Gemini 3.1 Pro", "description": "世界最高峰のモデルを、検索結果と統合して自由自在に切り替えて利用可能です。", "icon": "🔄" }
+    ],
+    "pros": [
+      "「ショッピングから医療まで」特化型検索が最強",
+      "出典の信頼性がさらに向上し、誤情報の割合が激減",
+      "Deep Research機能により1時間分のリサーチを1分で完了"
+    ],
+    "cons": [
+      "Shopping Agentの精度はまだ北米・欧州が中心",
+      "健康データの共有にはプライバシー設定の精査が必要"
+    ],
+    "pricing_details": [
+      { "plan": "Free", "price": "$0", "features": ["Standard search", "Unlimited Quick answers"] },
+      { "plan": "Pro", "price": "$20/mo", "features": ["Comet access", "Claude 4.6/Gemini 3.1 choice", "Unlimited Deep Research"] },
+      { "plan": "Max", "price": "Custom", "features": ["Enterprise governance", "Dedicated Memory storage"] }
+    ],
+    "comparison": {
+      "main_tool": { "features": ["出典データの深掘り", "ショッピング agent 統合", "医療・金融特化モード"] },
+      "alt_tool": { "name": "Google Search 2026", "features": ["AI要約のみで購買不可", "広告ファースト", "情報の断片化"] },
+      "summary": "「検索」は終わり、「意思決定」をAIに丸投げする時代になりました。"
+    },
+    "cost_reduction": {
+      "title": "リサーチ工数削減シミュレーション",
+      "subtitle": "情報収集と購買判断の圧倒的な効率化",
+      "before": { "hours": 20, "cost": "¥100,000", "label": "Google検索・比較表作成（週）" },
+      "after": { "hours": 1, "cost": "¥5,000", "label": "Perplexity Deep Research活用" },
+      "saving_ratio": "95%",
+      "monthly_saving": "¥380,000"
+    },
     "recipe": {
-      "title": "市場調査自動化レシピ",
-      "description": "競合調査やトレンド分析を、出典付きで瞬時に完了させます。",
-      "prompt": "日本のAI SaaS業界における、直近3ヶ月の主要な資金調達イベントを一覧形式でまとめてください。各項目には公式のニュースソースURLを含めること。"
+      "title": "市場価格調査＆最安値購入代行レシピ",
+      "description": "Cometを使えば、スペック比較から最安値の特定、注文直前までを自動化できます。",
+      "prompt": "新型MacBook Proの最安値を、主要サイト（Amazon, 楽天, Apple公式）からリサーチし、価格推移と納期を含めた比較表を作成してください。購入に最適なタイミングがあればその理由も併記してください。"
     },
     "meta": {
-      "lastUpdated": "2026-03-24T15:29:11.182Z",
-      "seoScore": 95,
-      "keywords": ["Perplexity AI 使い方", "Perplexity AI 比較"]
+      "lastUpdated": "2026-03-26T10:05:00.000Z",
+      "seoScore": 98,
+      "keywords": ["Perplexity Comet 使い方", "Perplexity Health 評判", "AI 検索エンジン 比較"]
     }
   },
   {
     "id": "notion",
     "name": "Notion AI",
     "category": "Productivity / AI",
-    "description": "ドキュメント作成、タスク管理、ナレッジ共有をAIで統合。チームの生産性を劇的に向上させます。",
-    "pricing": "$10 per member/month",
+    "description": "AI AgentがBusinessプランに標準統合。2026年、ドキュメントの「自動更新スキル」により管理コストがゼロに。",
+    "pricing": "$20 per member/month",
     "url": "https://www.notion.so",
     "affiliate_url": "https://www.notion.so",
     "marunage_cta": "Notionで社内ナレッジを自動構築したい方はこちら",
+    "features": [
+      { "title": "Notion AI Agent", "description": "ワークスペース内の全データを参照し、プロジェクトの進捗報告やリスク抽出を毎日自動で行います。", "icon": "🕵️" },
+      { "title": "Custom Skills", "description": "繰り返しの編集作業を「スキル」としてAIに学習させ、一言で数百ページの更新を完遂させます。", "icon": "⚡" },
+      { "title": "Tab & Smart Archive", "description": "古い情報を自動でアーカイブ。情報の鮮度をAIが常時監視し、クリーンな環境を維持します。", "icon": "🧹" }
+    ],
+    "pros": [
+      "AIエージェントによる自律的な管理機能",
+      "ドキュメントの「書く」から「メンテナンス」へのシフト",
+      "大規模チームでの情報検索コストがほぼゼロに"
+    ],
+    "cons": [
+      "強力なAI機能はBusinessプラン（$20/mo）以上に限定される",
+      "タスクの自動管理には正確なステータス入力を習慣化する必要がある"
+    ],
+    "pricing_details": [
+      { "plan": "Plus", "price": "$10/user", "features": ["Basic AI writing", "Unlimited blocks"] },
+      { "plan": "Business", "price": "$20/user", "features": ["Full AI Agent access", "Ask Notion", "Custom Skills"] },
+      { "plan": "Enterprise", "price": "Custom", "features": ["Audit logs", "SAML SSO", "Private AI models"] }
+    ],
+    "comparison": {
+      "main_tool": { "features": ["自律エージェント統合", "情報の自動アーカイブ", "全社ナレッジの即時検索"] },
+      "alt_tool": { "name": "Slack AI / Teams AI", "features": ["チャットの要約に限定", "情報の蓄積・整理が弱い", "自律スキルなし"] },
+      "summary": "2026年、Notionは「ノート」ではなく「社内の頭脳」になりました。"
+    },
+    "cost_reduction": {
+      "title": "マネジメントコスト削減シミュレーション",
+      "subtitle": "進捗管理とドキュメント整備の完全自動化",
+      "before": { "hours": 15, "cost": "¥75,000", "label": "手動ドキュメント整理・報告（週）" },
+      "after": { "hours": 1, "cost": "¥5,000", "label": "Notion AI Agent活用（週）" },
+      "saving_ratio": "93%",
+      "monthly_saving": "¥280,000"
+    },
     "recipe": {
-      "title": "社内Wiki自動要約レシピ",
-      "description": "散らばった議事録やドキュメントを、プロジェクト単位で瞬時に要約・整理します。",
-      "prompt": "このページの議事録から、決定事項、未決事項、およびネクストアクションを抽出してタスクリストに変換してください。"
+      "title": "自動KPIレポート作成スキル",
+      "description": "散らばったデータベースから必要な数値を抽出し、経営層向けのサマリーを毎日朝9時に作成させます。",
+      "prompt": "プロジェクトデータベースの全ステータスを読み取り、現在の遅延リスク、決定事項、およびリソースの過不足をまとめた週次レポートを作成してください。"
     },
     "meta": {
-      "lastUpdated": "2026-03-24T15:29:11.182Z",
-      "seoScore": 95,
-      "keywords": ["Notion AI 活用"]
+      "lastUpdated": "2026-03-26T10:10:00.000Z",
+      "seoScore": 97,
+      "keywords": ["Notion AI Agent 使い方", "Notion 2026 アップデート", "社内ナレッジ AI"]
     }
   },
   {
     "id": "midjourney",
     "name": "Midjourney",
     "category": "Visual AI",
-    "description": "世界最高峰の画像生成AI。広告、Webデザイン、ブランディングに必要なクリエイティブを瞬時に生成します。",
+    "description": "2026年3月、V8 Alpha公開。2K解像度の爆速生成と、実写と区別不能な圧倒的クオリティを実現。",
     "pricing": "$10+ per month",
     "url": "https://midjourney.com",
     "affiliate_url": "https://midjourney.com",
     "marunage_cta": "AIでクリエイティブ制作コストを削減したい方はこちら",
+    "features": [
+      { "title": "V8 Alpha (Speed & Detail)", "description": "従来の4倍の速度で生成。新パラメータ --hd により、スマホ撮影のような自然な2K出力を実現。", "icon": "🚀" },
+      { "title": "Style Reference v3", "description": "1枚の画像からブランドカラー、タッチ、ライティングを完璧に抽出し、無限に横展開可能です。", "icon": "🌈" },
+      { "title": "Real-time Creator App", "description": "ブラウザ上で生成しながら、スライダーで光の向きや被写体の深度をリアルタイム調整可能。", "icon": "🕹️" }
+    ],
+    "pros": [
+      "V8 Alphaによる「待機時間ゼロ」の画像生成",
+      "広告撮影が不要になるレベルの超高精細2K出力",
+      "Webエディタの進化によりDiscord無しでも全機能が快適に"
+    ],
+    "cons": [
+      "依然として無料枠はなく、最低$10/moが必要",
+      "V8の芸術性は高いが、一部の抽象表現でV7を好むユーザーもいる"
+    ],
+    "pricing_details": [
+      { "plan": "Basic", "price": "$10/mo", "features": ["3.3 hr Fast (200 images)", "V8 Alpha access"] },
+      { "plan": "Standard", "price": "$30/mo", "features": ["15 hr Fast", "Unlimited Relax mode"] },
+      { "plan": "Pro", "price": "$60/mo", "features": ["30 hr Fast", "Stealth Mode (生成物の非公開)"] },
+      { "plan": "Mega", "price": "$120/mo", "features": ["60 hr Fast", "Priority GPU Access"] }
+    ],
+    "comparison": {
+      "main_tool": { "features": ["4倍の生成速度", "ネイティブ2K出力", "超高精細な質感表現"] },
+      "alt_tool": { "name": "DALL-E 4 (2026)", "features": ["指示には正確だがCG感が強い", "解像度に限界あり", "質感がフラット"] },
+      "summary": "2026年、Midjourneyは「撮影とレタッチ」の両方を過去のものにしました。"
+    },
+    "cost_reduction": {
+      "title": "撮影・素材調達コスト削減",
+      "subtitle": "実写広告撮影とストックフォト購入のゼロ化",
+      "before": { "hours": 50, "cost": "¥500,000", "label": "ロケ撮影・素材購入（月）" },
+      "after": { "hours": 2, "cost": "¥20,000", "label": "Midjourney V8活用（月）" },
+      "saving_ratio": "96%",
+      "monthly_saving": "¥480,000"
+    },
     "recipe": {
-      "title": "高級感あふれる広告画像生成",
-      "description": "プロのデザイナー級のビジュアルを生成するための高度なプロンプト設定です。",
-      "prompt": "/imagine prompt: Architecture photography of a minimalist futuristic office, glassmorphism, cinematic lighting, 8k resolution, elegant green accents --ar 16:9 --v 6.0"
+      "title": "シネマティック2K広告ビジュアルレシピ",
+      "description": "実写ブランド広告に使用される、極めてナチュラルかつ高級感のある画像生成プロンプトです。",
+      "prompt": "/imagine prompt: High-end lifestyle photography of a tech-luxury home office, soft natural morning light filtering through linen curtains, extreme detail, 8k textures, cinematic depth of field --hd --ar 16:9 --v 8.0"
     },
     "meta": {
-      "lastUpdated": "2026-03-25T01:30:00.000Z",
-      "seoScore": 98,
-      "keywords": ["Midjourney プロンプト", "Midjourney 使い方"]
+      "lastUpdated": "2026-03-26T10:15:00.000Z",
+      "seoScore": 99,
+      "keywords": ["Midjourney V8 使い方", "Midjourney 2K出力", "画像生成AI 最新"]
     }
   },
   {
     "id": "canva",
     "name": "Canva AI",
     "category": "Design / Content Creation",
-    "description": "デザインの民主化。AIマジックにより、プロ級のSNS投稿、スライド、動画を数秒で生成。驚異的なROIを実現します。",
-    "pricing": "¥1,500+ per month (Pro)",
+    "description": "2026年「Magic Layers」搭載。静止画を構成要素に分解し、AIで自由自在に再構築可能に。",
+    "pricing": "$120 per year (Pro)",
     "url": "https://www.canva.com",
     "affiliate_url": "https://www.canva.com",
     "marunage_cta": "企業のブランドデザインをAIで効率化したい方はこちら",
+    "features": [
+      { "title": "Magic Layers (PUBLIC BETA)", "description": "画像内の人物、背景、看板などをAIが自動レイヤー化。個別に移動・修正が可能です。", "icon": "🖼️" },
+      { "title": "Image to Video 2.0", "description": "1枚の写真から、ブランドロゴを動かしたり背景を流したりする高品質な動画広告を生成します。", "icon": "🎬" },
+      { "title": "Magic SEO for Website", "description": "Canvaで作ったLPに対し、AIが検索順位を上げるための説明文を自動生成・配置します。", "icon": "🚀" }
+    ],
+    "pros": [
+      "AIによる「レイヤー分解・再編集」が画期的",
+      "デザインからSEO対策まで一気通貫で行える",
+      "Affinity 3.1統合により、プロ向けツールの機能がブラウザで融合"
+    ],
+    "cons": [
+      "Magic Layersの高度な機能はProプラン（年額$120）が必須",
+      "ビジネス利用でのチーム連携にはBusinessプラン（年額$200）が推奨される"
+    ],
+    "pricing_details": [
+      { "plan": "Free", "price": "¥0", "features": ["Basic AI design", "Limited media assets"] },
+      { "plan": "Pro", "price": "$120/yr", "features": ["Magic Layers", "Full AI suite", "Premium stock"] },
+      { "plan": "Business", "price": "$200/yr", "features": ["Enterprise controls", "Brand Kits", "Priority rendering"] }
+    ],
+    "comparison": {
+      "main_tool": { "features": ["レイヤーごとのAI編集", "LPのSEO自動化", "爆速動画広告生成"] },
+      "alt_tool": { "name": "Photoshop AI (2026)", "features": ["依然として学習コストが高い", "ブラウザでの動作が重い", "動画・Web連携が弱い"] },
+      "summary": "デザインの「制作」をなくし、「編集と配置」だけに絞り込みました。"
+    },
+    "cost_reduction": {
+      "title": "SNS運用・広告制作コスト削減",
+      "subtitle": "動画広告製作とウェブ更新作業の自動化",
+      "before": { "hours": 30, "cost": "¥150,000", "label": "手動デザイン・動画作成（月）" },
+      "after": { "hours": 3, "cost": "¥15,000", "label": "Canva AI 2026活用（月）" },
+      "saving_ratio": "90%",
+      "monthly_saving": "¥135,000"
+    },
     "recipe": {
-      "title": "爆速クリエイティブ生成レシピ",
-      "description": "テキストからロゴ、バナー、プレゼン資料を自動生成し、デザイン外注コストをゼロに近づけます。",
-      "prompt": "新しいAIコンサルティングサービスのロゴデザイン案を5つ作成してください。キーワードは「信頼」「近未来」「丸投げ」。洗練されたミニマリストなスタイルを希望します。"
+      "title": "レイヤー編集・広告バリエーション量産レシピ",
+      "description": "1つのメインビジュアルから、AIレイヤー分解を使って複数パターンの広告を瞬時に作成します。",
+      "prompt": "この画像の背景を「春の公園」から「夏の海辺」に変更し、人物の服装をより夏らしいものに Magic Layers で書き換えてください。その上でインスタストーリー用の広告動画に変換して。"
     },
     "meta": {
-      "lastUpdated": "2026-03-25T18:30:00.000Z",
-      "seoScore": 96,
-      "keywords": ["Canva AI 使い方", "Canva 画像生成"]
+      "lastUpdated": "2026-03-26T10:20:00.000Z",
+      "seoScore": 97,
+      "keywords": ["Canva Magic Layers", "Canva 画像から動画", "AI デザイン 効率化"]
+    }
+  },
+  {
+    "id": "chatgpt",
+    "name": "ChatGPT",
+    "category": "AI Assistant",
+    "description": "2026年3月、新型 GPT-5.4 搭載。Soraによる動画生成、Deep Research、高度なショッピング機能を統合。",
+    "pricing": "$20 per month (Plus)",
+    "url": "https://chatgpt.com",
+    "affiliate_url": "https://openai.com",
+    "marunage_cta": "ChatGPTを社内導入して組織を自動化したい方はこちら",
+    "features": [
+      { "title": "GPT-5.4 Reasoning", "description": "100万トークンの視野と、人間を超える論理的推論を備えた最強モデル。誤回答が27%減少。", "icon": "🧠" },
+      { "title": "Sora Video Integration", "description": "チャットから直接、720p/1080pのシネマティックな動画を月間50本以上生成可能。", "icon": "🎥" },
+      { "title": "Advanced Shopping Experience", "description": "画像をアップロードするだけで、世界中のサイトから類似商品を比較・分析、購入までガイド。", "icon": "🛍️" }
+    ],
+    "pros": [
+      "GPT-5.4の圧倒的な知性と安定感",
+      "Sora統合による動画制作の民主化",
+      "Deep Researchにより、専門的なリサーチ時間が1/100に"
+    ],
+    "cons": [
+      "最新機能の使い倒しにはPlus ($20) / Pro ($200) プランが必須",
+      "あまりに多機能なため、全ての機能を使いこなすのに学習が必要"
+    ],
+    "pricing_details": [
+      { "plan": "Plus", "price": "$20/mo", "features": ["GPT-5.4 full access", "50 Sora videos/mo", "10 Deep Research/mo"] },
+      { "plan": "Pro", "price": "$200/mo", "features": ["Unlimited GPT-5.4 Pro access", "Unlimited Sora (1080p)", "Priority compute"] },
+      { "plan": "Team", "price": "$30/user", "features": ["Team management", "Higher rate limits", "Excluded from training"] }
+    ],
+    "comparison": {
+      "main_tool": { "features": ["GPT-5.4の汎用性", "動画生成(Sora)統合", "Deep Research対応"] },
+      "alt_tool": { "name": "ChatGPT 2024 (Legacy)", "features": ["GPT-4o限定", "動画生成不可", "推論エラーが目立つ"] },
+      "summary": "2026年、ChatGPTは「道具」から「万能のパートナー」になりました。"
+    },
+    "cost_reduction": {
+      "title": "資料・動画作成コスト削減",
+      "subtitle": "プロフェッショナルな要約と動画制作の統合",
+      "before": { "hours": 15, "cost": "¥75,000", "label": "手動ドキュメント・動画制作（週）" },
+      "after": { "hours": 1, "cost": "¥5,000", "label": "GPT-5.4 + Sora活用（週）" },
+      "saving_ratio": "93%",
+      "monthly_saving": "¥280,000"
+    },
+    "recipe": {
+      "title": "自律型ビジネスプラン動画化レシピ",
+      "description": "文字の事業計画から、出資者向けの高品質なプレゼン動画を自動で生成します。",
+      "prompt": "この事業計画書の要点を抜き出した上で、各セクションを説明するシネマティックな背景動画（Sora使用）を含む、30秒のPR動画構成案とコードを作成してください。"
+    },
+    "meta": {
+      "lastUpdated": "2026-03-26T10:25:00.000Z",
+      "seoScore": 99,
+      "keywords": ["GPT-5.4 特徴", "ChatGPT Sora 使い方", "AI 動画生成 定額"]
+    }
+  },
+  {
+    "id": "gemini",
+    "name": "Gemini",
+    "category": "AI Assistant / Ecosystem",
+    "description": "Google Workspaceと一体化した「Ambient AI」。Gemini 3.1 Pro搭載、生活の隅々にAIが溶け込む体験を。",
+    "pricing": "$19.99 per month (AI Pro)",
+    "url": "https://gemini.google.com",
+    "affiliate_url": "https://workspace.google.com",
+    "marunage_cta": "Google WorkspaceとAIを連携させたい方はこちら",
+    "features": [
+      { "title": "Ambient Layer 3.1", "description": "ユーザーの行動を先回りし、メール作成、予定調整、ファイル整理を自律的に行います。", "icon": "🌐" },
+      { "title": "1 Million Tokens Default", "description": "Gemini 3.1 Proにより、全資料・全メール履歴を常にコンテキストに入れて会話可能。", "icon": "🔋" },
+      { "title": "Google TV & Home Integration", "description": "家電、テレビ、スマホが1つのAIエージェントとして統合。生活全般をサポートします。", "icon": "🏠" }
+    ],
+    "pros": [
+      "Google Workspaceとの「究極の連携」",
+      "100万トークンの広大な視野による、膨大なPDF・動画解析能力",
+      "Google MapsやYouTubeを活用した高度なリアルタイム回答"
+    ],
+    "cons": [
+      "Gemini Advanced以上でないと最強のエージェント機能は制限される",
+      "他社プラットフォーム（Slack等）との連携は他AIに若干劣る場合がある"
+    ],
+    "pricing_details": [
+      { "plan": "Free", "price": "$0", "features": ["Standard Gemini model", "Google integration"] },
+      { "plan": "AI Pro", "price": "$19.99/mo", "features": ["Gemini 3.1 Pro", "2TB Cloud storage", "Advanced agent capabilities"] },
+      { "plan": "AI Ultra", "price": "Custom", "features": ["Enterprise memory", "Unlimited Agent requests", "SAML SSO"] }
+    ],
+    "comparison": {
+      "main_tool": { "features": ["Google全プラットフォーム統合", "100万トークンの視野", "スマートホーム対応"] },
+      "alt_tool": { "name": "Gemini 2024 (Legacy)", "features": ["部分的なメール下書き", "トークン制限が厳しい", "エージェント機能なし"] },
+      "summary": "Googleが「検索サイト」から「パーソナルライフエージェント」へと昇華しました。"
+    },
+    "cost_reduction": {
+      "title": "事務作業コスト削減シミュレーション",
+      "subtitle": "メール、予定、ドライブ管理のゼロ・マンパワー化",
+      "before": { "hours": 10, "cost": "¥50,000", "label": "Workspace手動操作（週）" },
+      "after": { "hours": 0.5, "cost": "¥2,500", "label": "Gemini Ambient AI活用（週）" },
+      "saving_ratio": "95%",
+      "monthly_saving": "¥190,000"
+    },
+    "recipe": {
+      "title": "全自動アウトバインド・レスポンスレシピ",
+      "description": "届いたメールをAIが分析し、カレンダーと同期を取り、返信案を作成する一連の流れを自動化します。",
+      "prompt": "未読の重要メールを全て要約し、翌週の空き時間に合わせてアポイント調整の返信案をドラフトしてください。また、関連する資料をドライブからリンクさせておいてください。"
+    },
+    "meta": {
+      "lastUpdated": "2026-03-26T10:30:00.000Z",
+      "seoScore": 98,
+      "keywords": ["Gemini 3.1 Pro 使い方", "Google AI Pro 料金", "スマートホーム AI 連携"]
+    }
+  },
+  {
+    "id": "claude",
+    "name": "Claude 3.5 Sonnet",
+    "category": "AI Assistant / Writing",
+    "description": "2026年3月、Claude 4.6 (Opus/Sonnet) 公開。新機能「Computer Use」により、AIが直接PCを操作して業務を代行。",
+    "pricing": "$20 per month (Pro)",
+    "url": "https://claude.ai",
+    "affiliate_url": "https://claude.ai",
+    "marunage_cta": "高品質なコンテンツ作成をAI化したい方はこちら",
+    "features": [
+      { "title": "Claude 4.6 (Opus/Sonnet)", "description": "100万トークンの視界と、人間を上回る情緒的な文章表現、高度な推論を搭載。", "icon": "🧩" },
+      { "title": "Computer Use (Research Preview)", "description": "クリック、スクロール、タイピングをAIが自ら行い、ウェブ閲覧やアプリ操作を代行します。", "icon": "🖱️" },
+      { "title": "Claude Code Auto Mode", "description": "許可なしで自律的にデバッグ。開発者が寝ている間にコードを完成させる高度なエージェント。", "icon": "💻" }
+    ],
+    "pros": [
+      "日本語の文章表現がAI界で最も美しく自然",
+      "Computer Useによる、ブラウザを越えた業務の自動化",
+      "Artifactsの進化により、複数のコードや図を並行してリアルタイム編集可能"
+    ],
+    "cons": [
+      "Computer Useはまだ研究プレビュー段階で挙動の安定性に課題もあり",
+      "Maxプラン ($100-$200) でないと最新のAgent能力を最大限に発揮できない"
+    ],
+    "pricing_details": [
+      { "plan": "Free", "price": "$0", "features": ["Standard model caps"] },
+      { "plan": "Pro", "price": "$20/mo", "features": ["Claude 4.6 full access", "Computer Use access", "Dispatch mobile"] },
+      { "plan": "Max", "price": "$200/mo", "features": ["Unlimited usage", "Prioritized Agent compute", "Private Data pools"] },
+      { "plan": "Team", "price": "$25/user", "features": ["Higher caps", "Admin console", "Usage analytics"] }
+    ],
+    "comparison": {
+      "main_tool": { "features": ["高品質な表現力", "自律的なPC操作(Computer Use)", "Claude Codeによる自律開発"] },
+      "alt_tool": { "name": "Claude 3.5 (Legacy)", "features": ["文章作成のみ", "エージェント機能なし", "トークン容量の限界"] },
+      "summary": "2026年、Claudeは「良き相談相手」から「仕事を任せられる部下」になりました。"
+    },
+    "cost_reduction": {
+      "title": "高度なライティング・開発コスト削減",
+      "subtitle": "推敲・デバッグ・リサーチの完全自律化",
+      "before": { "hours": 20, "cost": "¥100,000", "label": "手動ライティング・開発（週）" },
+      "after": { "hours": 2, "cost": "¥10,000", "label": "Claude 4.6 + Computer Use活用" },
+      "saving_ratio": "90%",
+      "monthly_saving": "¥360,000"
+    },
+    "recipe": {
+      "title": "Computer Use・競合分析レポート代行",
+      "description": "AIが実際にブラウザを開いて最新情報を収集し、Excelに整理して保存するまでを自動化します。",
+      "prompt": "ローカルのブラウザを立ち上げ、競合3社の最新プレスリリースと価格表を収集してください。その結果をExcelファイルに表形式で整理し、デスクトップに保存してください。"
+    },
+    "meta": {
+      "lastUpdated": "2026-03-26T10:35:00.000Z",
+      "seoScore": 99,
+      "keywords": ["Claude 4.6 特徴", "Claude Computer Use 使い方", "AI ライター おすすめ"]
     }
   }
 ]

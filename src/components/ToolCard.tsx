@@ -20,7 +20,7 @@ export default function ToolCard({ tool }: { tool: any }) {
           <span className="text-2xl md:text-3xl font-black premium-gradient">{tool.name[0]}</span>
         </div>
         <div className="flex flex-col items-end gap-2">
-          <span className="text-[9px] md:text-[10px] font-black uppercase tracking-[0.25em] text-accent bg-accent/10 px-3 md:px-4 py-1.5 rounded-full border border-accent/20">
+          <span className="text-[9px] md:text-[10px] font-black uppercase tracking-[0.25em] text-white bg-accent px-3 md:px-4 py-1.5 rounded-full border border-white/20 shadow-[0_0_15px_rgba(var(--accent-rgb),0.3)]">
             {tool.category}
           </span>
         </div>
